@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/bootstrap.css">
+    <link rel="stylesheet" href="/style_connexion.css">
+    
+    
+  </head>  
+  
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a id="img_logo" class="navbar-brand" href="index.html"><img src="https://cdn.glitch.com/6b900fdc-ca30-4be8-b4d7-c43fbf18b12a%2F18f7bccb-30d1-4960-a47b-b8663e16f865.png?1555192102788"></a> 
+      <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="inscription.html">Inscription</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="connexion.html">Se connecter</a>
+    </li>
+  </ul>
+</nav> 
+
+    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+    
+<div id="Erreur_Compte"></div>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="https://cdn.glitch.com/6b900fdc-ca30-4be8-b4d7-c43fbf18b12a%2Fusericon.png?1554997489594" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form method="POST" action = "/connexion">
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Nom d'utilisateur" required>
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="Mot de passe" required>
+      <button type="submit" class="btn-hover color-2">Connexion</button>
+    </form>
+  </div>
+</div>
+  </body>
+  
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+     <link rel="stylesheet" href="/animate.css">
+    <link rel="stylesheet" href="/solo.css">
+  </head>  
+  
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+       <img src="https://cdn.glitch.com/f44b6a9d-2383-4765-8b0b-e5e320629be1%2Fdame.jpg?1553275429587" alt="Logo" style="width:50px;">
+      <a class="navbar-brand" href="index.html">Ma Dame</a>
+      <ul class="navbar-nav">
+  </ul>
+</nav> 
+    <div id="zonedeJeu">
+      <h1 id="scoreJ1"></h1>
+      <div id="audio_game">
+        <audio id = "myAudio" autoplay loop>
+          <source src="https://cdn.glitch.com/6b900fdc-ca30-4be8-b4d7-c43fbf18b12a%2FEpic%20Pirate%20Music%20-%20Seafights%20(Groove%20Addicts).mp3?1555241379292" type="audio/mpeg">
+        </audio> 
+        <div id="Tab1">Activez JavaScript pour jouer.</div>
+        <script> 
+          function Forfeit(){
+            alert("Ah Super ! On quitte la partie sans pression ? ...");
+            client.emit('Abandon', 1);
+          }
+        </script>
+        <a href="index.html"><button onclick="Forfeit()" id="looser" class="btn-hover color-2">Abandonner comme un lâche</button></a>
+      </div>
+      <h1 id="scoreJ2"></h1>
+    </div>     
+      <script>
+        var aud = document.getElementById("myAudio");
+        aud.volume = 0.01;
+      </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+    <script src="/multi.js"></script>
+</body>
+</html>

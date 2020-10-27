@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+     <link rel="stylesheet" href="/animate.css">
+    <link rel="stylesheet" href="/solo.css">
+  </head>  
+  
+  <body>
+    <a id="img_logo" class="navbar-brand" href="index.html"><img src="https://cdn.glitch.com/6b900fdc-ca30-4be8-b4d7-c43fbf18b12a%2F18f7bccb-30d1-4960-a47b-b8663e16f865.png?1555192102788"></a>    
+    <div id="zonedeJeu">
+      <h1 id="scoreJ1">ScoreJ1</h1>
+      <div id="audio_game">
+        <audio id = "myAudio" autoplay loop>
+          <source src="https://cdn.glitch.com/6b900fdc-ca30-4be8-b4d7-c43fbf18b12a%2FEpic%20Pirate%20Music%20-%20Seafights%20(Groove%20Addicts).mp3?1555241379292" type="audio/mpeg">
+        </audio> 
+        <div id="Tab1">Activez JavaScript pour jouer.</div>
+        <a href="connexion.html"><button class="btn-hover color-2">Abandonner comme un lâche</button></a>
+      </div>
+      <h1 id="scoreJ2">ScoreJ2</h1>
+    </div>
+      <script>
+        var aud = document.getElementById("myAudio");
+        aud.volume = 0.03;
+      </script>
+     <script src="/solo.js"></script>
+</body>
+</html>

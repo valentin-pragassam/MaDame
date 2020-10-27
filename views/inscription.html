@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/bootstrap.css">
+    <link rel="stylesheet" href="/style.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+  
+  </head>  
+  
+  <body>
+    <nav  id="nav_insc" class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a id="img_logo" class="navbar-brand" href="index.html"><img src="https://cdn.glitch.com/6b900fdc-ca30-4be8-b4d7-c43fbf18b12a%2F18f7bccb-30d1-4960-a47b-b8663e16f865.png?1555192102788"></a> 
+      <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="inscription.html">Inscription</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="connexion.html">Se connecter</a>
+    </li>
+  </ul>
+</nav> 
+ 
+<div id="form_insc" class="container"> 
+  <div class="row">
+    <div class="col">
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+<!------ formulaire inscirption ---------->
+
+<form id="myForm" class="form-horizontal" action="/inscription" method="POST">
+  <fieldset>
+    <div class="control-group">
+      <!-- Username -->
+      <label class="control-label"  for="username">Nom d'utilisateur</label>
+      <div class="controls">
+        <input type="text" id="username" name="username" placeholder="" class="input-xlarge" required>
+        <p class="help-block">ex: Xxfloflodu78xX</p>
+      </div>
+    </div>
+  
+    <div class="control-group">
+      <!-- Password-->
+      <label class="control-label" for="password">Mot de passe</label>
+      <div class="controls">
+        <input type="password" id="password" name="password" placeholder="" class="input-xlarge" required>
+        <p class="help-block">Au moins 4 caractères</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Password -->
+      <label class="control-label"  for="password_confirm">Confirmation du mot de passe</label>
+      <div class="controls">
+        <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge" required>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Button -->
+      <div class="controls">
+        <button class="btn-hover color-2" value="Submit">confirmer</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+  </div>
+      </div>
+  </div>
+    </div>
+    </div>
+    
+    <div class="row align-items-center">
+      <div class="class=col-md-4 col-md-offset-4 d-xs-none">
+        <a id="anim_insc" class="name_jeu_inscription" >Rejoins des milions de joueurs</a>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      </div>
+    </div>
+  
+</body>
+</html>

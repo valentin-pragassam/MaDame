@@ -1,0 +1,225 @@
+/* CSS files add styling rules to your content */
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+
+body {
+  font-family: "Avenir LT Std", "Helvetica Neue", helvetica, arial, sans-serif !important ;
+  background-image:url(https://cdn.glitch.com/6b900fdc-ca30-4be8-b4d7-c43fbf18b12a%2Fai-close-up-code-160107.jpg?1553354018688);
+  background-position:center center;
+  
+}
+
+
+div{
+  color:white;
+}
+a{
+text-decoration : none;
+color:white;
+}
+a:hover{
+text-decoration : none!important;
+color:LightSeaGreen;
+}
+
+
+
+@keyframes tipsy {
+  0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+.name_jeu_home {
+  color: #fffbf1;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 40px;
+  text-decoration: none;
+  letter-spacing: -3px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.name_jeu_home:before,
+.name_jeu_home:after {
+  content: '';
+  padding: 0.9em .4em;
+  position: absolute;
+  left: 50%;
+  width: 110%;
+  top: 50%;
+  display: block;
+  border: 15px solid red;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+.name_jeu_home:before {
+  border-color: rgb(90, 89, 164) rgb(90, 89, 164) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+.name_jeu_home:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
+
+.name_jeu_inscription {
+  color: #fffbf1;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 35px;
+  text-decoration: none;
+  letter-spacing: -3px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.name_jeu_inscription:before,
+.name_jeu_inscription:after {
+  content: '';
+  padding: .9em .4em;
+  position: absolute;
+  left: 50%;
+  width: 110%;
+  top: 50%;
+  display: block;
+  border: 15px solid red;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+.name_jeu_inscription:before {
+  border-color: rgb(90, 89, 164) rgb(90, 89, 164) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+.name_jeu_inscription:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
+.autor{
+  margin-top: 1.5em;
+}
+
+#form_insc{
+margin-left:5%;
+margin-top:10%
+}
+
+#nav_insc{
+ font-size:1.5em; 
+}
+
+/*SALON.CSS------------------------------*/
+
+#flex_container {
+  height:50%;
+  width:50%;
+  margin-left:25%;
+  margin-top:2.5vw;
+  display:flex;
+  justify-content:center; 
+  border:5px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      orange
+    ) 1 1 1;
+  border-radius:15px;
+  align-items:center;
+  background-image:url(https://cdn.glitch.com/6b900fdc-ca30-4be8-b4d7-c43fbf18b12a%2Fai-close-up-code-160107.jpg?1553354018688);
+}
+
+#TLU{
+text-align:center;
+  margin-top:1.5vw;
+font-size:1.5em;
+color:white;
+}
+
+/*Bouton defier*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
+/*------Bouton menu---------*/
+
+#contenant{
+  text-align:center;
+}
+
+#contenant img{
+max-width: 100%;
+	height: auto;
+}
+
+#img_logo img{
+  width: 60px;
+	height: 60px;;
+}
+
+@media screen and (max-width: 640px) {
+  #anim_insc{
+  display: none; 
+  }
+}

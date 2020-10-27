@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/bootstrap.css">
+    <link rel="stylesheet" href="/style.css">
+     <link rel="stylesheet" href="/animate.css">
+    
+  </head>  
+  
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a id="img_logo" class="navbar-brand" href="index.html"><img src="https://cdn.glitch.com/6b900fdc-ca30-4be8-b4d7-c43fbf18b12a%2F18f7bccb-30d1-4960-a47b-b8663e16f865.png?1555192102788"></a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="Pconnect" class="nav-link" href="#"></a>
+          </li>
+        </ul>
+    </nav> 
+    <p id="TLU" class="animated bounceInDown slow">Utilisateurs connectés:</p>
+      <div id="flex_container" class="animated bounceInDown slow">
+        <div class="txt">
+         <table>
+           <thead>
+             <tr>
+              <th>Pseudo</th>
+            </tr>
+           </thead>
+           <tbody>
+             <tr>
+              <td id="Jconnect"></td>
+             </tr>
+           </tbody>
+          </table>
+        </div>
+      </div>
+    <p id="popup"></p>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+    
+</body>
+</html>
+
